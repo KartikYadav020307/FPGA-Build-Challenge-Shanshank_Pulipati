@@ -8,7 +8,7 @@
 
 | Name | Registration Number |
 | --- | --- |
-| Shanshank Pulipati | 25BEC0573 |
+| Shashank Pulipati | 25BEC0573 |
 | Kartik Yadav | 25BEC0087 |
 
 ## Selected FPGA Board
