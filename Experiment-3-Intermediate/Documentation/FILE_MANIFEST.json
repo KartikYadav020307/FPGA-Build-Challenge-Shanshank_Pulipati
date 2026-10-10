@@ -1,0 +1,647 @@
+{
+  "experiment": 3,
+  "team": "Beyond Boolean",
+  "update_date": "2026-10-10",
+  "files": [
+    {
+      "path": "Documentation/CAPTURE_PROVENANCE.md",
+      "bytes": 1420,
+      "sha256": "89e68db4b586b05333bdd214d37fdd9928ef2518c9461422335442c3ff52de11"
+    },
+    {
+      "path": "Documentation/DEMO_RECORDING_GUIDE.md",
+      "bytes": 1428,
+      "sha256": "abe653a9aecda9d1df1ac7cf93dea21aa2224f82363b462652f955b000fea092"
+    },
+    {
+      "path": "Documentation/GET_REMAINING_CAPTURES.md",
+      "bytes": 1112,
+      "sha256": "a26a795eaca90edb66f4e0a7a26e803e5ddb05a126e577a73bac461541d0b740"
+    },
+    {
+      "path": "Documentation/HARDWARE_SCREENSHOT_PROVENANCE.md",
+      "bytes": 509,
+      "sha256": "bfe366a002fd15ecf043b1a2224fcbe67b206bc363631226c0637a0b25b2d411"
+    },
+    {
+      "path": "Documentation/Project3_ECG_Report.pdf",
+      "bytes": 2306004,
+      "sha256": "e3d1a2b8651fc0c04a07d7c04c53e1b3dc92f3ffdb4a8db91b249dbdaf37c8fa"
+    },
+    {
+      "path": "Documentation/SOURCE_PROVENANCE.md",
+      "bytes": 2815,
+      "sha256": "eddca351996ee23799ede0782189cd0b4f7e298efcac2fa01cc2f9c55c406b23"
+    },
+    {
+      "path": "Documentation/SUBMISSION_READINESS.md",
+      "bytes": 2750,
+      "sha256": "2b7599836ed3d801eaca667180b024ec976ee2d750321357a1565adddefd2b9a"
+    },
+    {
+      "path": "Documentation/VIDEO_REVIEW.md",
+      "bytes": 631,
+      "sha256": "bf7ae9ed4b2b0895af8aa5eee24bdf0d2629603ad65d5b0e84e882db6f63df6f"
+    },
+    {
+      "path": "Images/01_sine_verification.png",
+      "bytes": 261220,
+      "sha256": "6c08cdfb96c8611aed6a6f91cf0aac0feaeb9a906ebf3f149e2e89eb4a085e00"
+    },
+    {
+      "path": "Images/02_ecg_peaks.png",
+      "bytes": 221228,
+      "sha256": "c22ce238aa4c1737ccd0323abc16d413f2982b97a6a1cbdcf3113cf50cafccdc"
+    },
+    {
+      "path": "Images/block_diagram.png",
+      "bytes": 54206,
+      "sha256": "9ee48e1c20a068abfd594439806c761fe581ac1a9c641d10b0850e5c483cc3f7"
+    },
+    {
+      "path": "Images/block_diagram_reconstructed_from_bd.png",
+      "bytes": 54206,
+      "sha256": "9ee48e1c20a068abfd594439806c761fe581ac1a9c641d10b0850e5c483cc3f7"
+    },
+    {
+      "path": "Images/board_setup.jpg",
+      "bytes": 116955,
+      "sha256": "1b2694e63531353de11fa5ee6adbe5028d5ebbd1bddd324e01c91714b98089db"
+    },
+    {
+      "path": "Images/hardware_output.jpg",
+      "bytes": 334318,
+      "sha256": "6835f97ce44baf4e76a21c27e2b52463407c659e188c6a727f835964ea826cac"
+    },
+    {
+      "path": "Images/hardware_output_original.png",
+      "bytes": 87267,
+      "sha256": "6a8081cd600aac30b8ff3264f20b835e1250832fba69511033a078e92dff1e20"
+    },
+    {
+      "path": "Images/IMAGE_EVIDENCE_STATUS.md",
+      "bytes": 764,
+      "sha256": "03750b598f2f7e3a4a0bdf57c8ff5a212ba7c6d1cbed8a7650febf9aa0adcd6b"
+    },
+    {
+      "path": "Images/rtl_schematic.pdf",
+      "bytes": 117499,
+      "sha256": "41b9114dc71065543a8d16589a49958c7c2382695608ef7bec9886ff86f02eff"
+    },
+    {
+      "path": "Images/rtl_schematic.png",
+      "bytes": 1144557,
+      "sha256": "547f5b98bed99fc79fe71e934110e48dd862db8c4b30fc4adb2bb0083c472b25"
+    },
+    {
+      "path": "Images/rtl_schematic_input_detail.png",
+      "bytes": 32413,
+      "sha256": "88c10635b0e5fcc9e0d79ad2a617c0546f282011973f1ec506596b997192cdf6"
+    },
+    {
+      "path": "PYNQ_Hardware/DATA_SOURCE.md",
+      "bytes": 1292,
+      "sha256": "22580f956c89fd2631f46aa0123ac6ec33f77c7a6648ef73850db4bfb194c243"
+    },
+    {
+      "path": "PYNQ_Hardware/ecg_filter.bit",
+      "bytes": 4045692,
+      "sha256": "8a9abb2d973393e5051e13a8ed74d0a56d143f699b4b1481e35447135391aa72"
+    },
+    {
+      "path": "PYNQ_Hardware/ecg_filter.hwh",
+      "bytes": 293462,
+      "sha256": "70230f08a061df507ed2fa553e8dd534d83f9b8e68d9de2e5ca96364a4278d97"
+    },
+    {
+      "path": "PYNQ_Hardware/ecg_filter.xsa",
+      "bytes": 582889,
+      "sha256": "6227f53fadea997aac7978074cbce63f850908149be9d0ed5cceb3b6917f8981"
+    },
+    {
+      "path": "PYNQ_Hardware/ecg_filter_test.ipynb",
+      "bytes": 106523,
+      "sha256": "715769342208c1581392889d4e86d7fa3f85b1ea32f5c2a9f7c05c1a1776b98a"
+    },
+    {
+      "path": "PYNQ_Hardware/ecg_record100_360hz.csv",
+      "bytes": 134838,
+      "sha256": "2f17af5bd233a137f223c3409959313e5b20f57a30ae142b9bbbef38d0b64951"
+    },
+    {
+      "path": "PYNQ_Hardware/fir_reference.json",
+      "bytes": 3712,
+      "sha256": "c9d6f13fbede855b32bb7fd5b7b40c58eec66bc7274052c876dcdeb884a3357d"
+    },
+    {
+      "path": "PYNQ_Hardware/Project3_ECG_Demo.ipynb",
+      "bytes": 261353,
+      "sha256": "204be0d23f503cd87b780198116a3ca2e086c7343d9b3fbf6c33e50f1f8c5fd5"
+    },
+    {
+      "path": "PYNQ_Hardware/README.md",
+      "bytes": 710,
+      "sha256": "d2087538e3696c2c5ac7038e0b4214076e982dd5c589b4bd598d45c95a923a03"
+    },
+    {
+      "path": "PYNQ_Hardware/Supporting_Data_and_Results/detected_peaks.csv",
+      "bytes": 710,
+      "sha256": "4b556b8acebf8ae9ada955c9cde9a92b9ad904241acce45a9feab3190a2c16d7"
+    },
+    {
+      "path": "PYNQ_Hardware/Supporting_Data_and_Results/hardware_ecg_results.csv",
+      "bytes": 629897,
+      "sha256": "ef5dc6956aaa00e7897991a6110a6d29af73d0438c1813f1de68e0630596da6d"
+    },
+    {
+      "path": "PYNQ_Hardware/Supporting_Data_and_Results/hardware_results.json",
+      "bytes": 621,
+      "sha256": "efa04e6304220379a7185bd9c04d3538e9c0b72896cf17f61e70b18ee3d8efa3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5946,
+      "sha256": "b0da5285a740ab6e771b585ed3842f11acf0fdbb9c86e802a337b2761474c6ca"
+    },
+    {
+      "path": "RTL/Constraints/ecg_bandpass_filter_ooc_generated.xdc",
+      "bytes": 395,
+      "sha256": "bc275c403c2beeec95b0c3664ecc37842f82207b326bf93c35acb6c465ed2485"
+    },
+    {
+      "path": "RTL/Constraints/README.md",
+      "bytes": 318,
+      "sha256": "ecb489e15cf62c84956482c9c27a68eeb1f79047ed3ddb391365cb23d73f7e26"
+    },
+    {
+      "path": "RTL/Constraints/system_ooc_generated.xdc",
+      "bytes": 663,
+      "sha256": "b2103c288bb5e8773687a6883500c99432e02bd7f68c190a7b62bfbb463a3e36"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter.v",
+      "bytes": 174578,
+      "sha256": "0a2ddcc55ce96689c40431aa01f78f94d6a2e5060298d6194b2057207871d99f"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_ecg_bandpass_filter_Pipeline_VITIS_LOOP_79_1.v",
+      "bytes": 553081,
+      "sha256": "2bcd28d32a5fb0d15d8e2d0f1e270042b561e2e06675994c941cc5d3692e3adf"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_hls_deadlock_idx0_monitor.v",
+      "bytes": 1405,
+      "sha256": "6b2f641adc89a00094dcdf609ae8defb4188495d70e401e5dcdc213164173db6"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_hls_deadlock_idx1_monitor.v",
+      "bytes": 1140,
+      "sha256": "046304415fc0d130b3a12aa63173f75367f595ec71659b7c549d9db86a7588ef"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_hls_deadlock_kernel_monitor_top.vh",
+      "bytes": 1253,
+      "sha256": "7f8d1976de4c49e15745a07a57b8109fd6878af61b85d7ba6184a12564c129d5"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_10ns_28s_28_4_1.v",
+      "bytes": 1934,
+      "sha256": "248efc1742a2d984dd678820cfd61ea4630626348bcec0e134296398177055b3"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_5ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "9532e0ca7e4e1bc1288e56c6054eb9ec7c1982e824ed36fb6822ef3d2f230bd3"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_5s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "0ba7e9d162f3f5fc113a80398449967761879ff794d743df528749495cdbf872"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_6ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "9886f23f3a3f50d29f9578add3525274c5f3025ea566798eb98e45c8e16e9403"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_6s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "143797ceb581b7433cca02fe82b4d2338132fd69d08ba142ca752dc72c172ddc"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_7ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "bac03317b2a3c05d761fa923cf610e2fbd7def981fd03174ca73c47da6ea8ecb"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_7s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "583d0c3483f805bc76022d67671004b0983191d1d33fb0bb3611043e084f2f53"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_8ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "c954137260d956ca7838852c80c119fb84b5809f24ab2a5708eb58f74e56dc50"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_8s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "3e89b353c3bcd9020b264a9e14aba112d880cddd04ad21fea232346b81ea0bb3"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_9ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "096808574c77791e37db8ba6c752ee3d4e55f8866ab2727f99245769cea3fa7c"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_mac_muladd_16s_9s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "e9cd86c10726853d7bece96b5eb9eaf1c6f7fc3e8dd5c123f358dc56d0bedc5c"
+    },
+    {
+      "path": "RTL/Generated_Verilog/ecg_bandpass_filter_regslice_both.v",
+      "bytes": 3330,
+      "sha256": "7aefa63d2986113d42ecd8f67400a7259261217dc7fca5b34c8a381b87304651"
+    },
+    {
+      "path": "RTL/Generated_Verilog/README.md",
+      "bytes": 633,
+      "sha256": "7c24915975052e597b5dac8ab83ae602d8aac6a556fd9b1432c061e189901711"
+    },
+    {
+      "path": "RTL/Generated_Verilog/system_wrapper.v",
+      "bytes": 2715,
+      "sha256": "c74c2cf990f095c322afb2b90097cbaff8bb8f496cf93984bd6531a5f7c9234e"
+    },
+    {
+      "path": "RTL/HLS_Source/component.xml",
+      "bytes": 47383,
+      "sha256": "74f6066b53e51933f4dc5935a42cb72ba422cc8639a00b0285f4c9097b34210f"
+    },
+    {
+      "path": "RTL/HLS_Source/ecg_bandpass_filter.cpp",
+      "bytes": 6803,
+      "sha256": "67431bfd63a29f01926fb50cd9e31cdbe5a7ed72934680150b0e9088cbb48b80"
+    },
+    {
+      "path": "RTL/HLS_Source/ecg_bandpass_filter.h",
+      "bytes": 2386,
+      "sha256": "897da042a26db53105628292ab743750a149586dca2a4a11220af9e3553e47d1"
+    },
+    {
+      "path": "RTL/HLS_Source/ecg_bandpass_filter_packaged_IP.zip",
+      "bytes": 173458,
+      "sha256": "3b43aff8c171f4207c237af375f0099daaea0567aacb13a9ed2f72782b80f267"
+    },
+    {
+      "path": "RTL/HLS_Source/hls_config.cfg",
+      "bytes": 252,
+      "sha256": "0c1e041bd3f9a35ecc81b794caa3519fc71a9c3a32a364f55936912fcc329911"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/component.xml",
+      "bytes": 47383,
+      "sha256": "74f6066b53e51933f4dc5935a42cb72ba422cc8639a00b0285f4c9097b34210f"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/constraints/ecg_bandpass_filter_ooc.xdc",
+      "bytes": 395,
+      "sha256": "bc275c403c2beeec95b0c3664ecc37842f82207b326bf93c35acb6c465ed2485"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/doc/ReleaseNotes.txt",
+      "bytes": 109,
+      "sha256": "0c173796e1e883452634cf06aa576c2c48f20e2a322847017bde1e9be6dbc517"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter.v",
+      "bytes": 174578,
+      "sha256": "0a2ddcc55ce96689c40431aa01f78f94d6a2e5060298d6194b2057207871d99f"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_ecg_bandpass_filter_Pipeline_VITIS_LOOP_79_1.v",
+      "bytes": 553081,
+      "sha256": "2bcd28d32a5fb0d15d8e2d0f1e270042b561e2e06675994c941cc5d3692e3adf"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_hls_deadlock_idx0_monitor.v",
+      "bytes": 1405,
+      "sha256": "6b2f641adc89a00094dcdf609ae8defb4188495d70e401e5dcdc213164173db6"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_hls_deadlock_idx1_monitor.v",
+      "bytes": 1140,
+      "sha256": "046304415fc0d130b3a12aa63173f75367f595ec71659b7c549d9db86a7588ef"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_hls_deadlock_kernel_monitor_top.vh",
+      "bytes": 1253,
+      "sha256": "7f8d1976de4c49e15745a07a57b8109fd6878af61b85d7ba6184a12564c129d5"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_10ns_28s_28_4_1.v",
+      "bytes": 1934,
+      "sha256": "248efc1742a2d984dd678820cfd61ea4630626348bcec0e134296398177055b3"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_5ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "9532e0ca7e4e1bc1288e56c6054eb9ec7c1982e824ed36fb6822ef3d2f230bd3"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_5s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "0ba7e9d162f3f5fc113a80398449967761879ff794d743df528749495cdbf872"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_6ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "9886f23f3a3f50d29f9578add3525274c5f3025ea566798eb98e45c8e16e9403"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_6s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "143797ceb581b7433cca02fe82b4d2338132fd69d08ba142ca752dc72c172ddc"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_7ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "bac03317b2a3c05d761fa923cf610e2fbd7def981fd03174ca73c47da6ea8ecb"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_7s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "583d0c3483f805bc76022d67671004b0983191d1d33fb0bb3611043e084f2f53"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_8ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "c954137260d956ca7838852c80c119fb84b5809f24ab2a5708eb58f74e56dc50"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_8s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "3e89b353c3bcd9020b264a9e14aba112d880cddd04ad21fea232346b81ea0bb3"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_9ns_28s_28_4_1.v",
+      "bytes": 1929,
+      "sha256": "096808574c77791e37db8ba6c752ee3d4e55f8866ab2727f99245769cea3fa7c"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_mac_muladd_16s_9s_28s_28_4_1.v",
+      "bytes": 1923,
+      "sha256": "e9cd86c10726853d7bece96b5eb9eaf1c6f7fc3e8dd5c123f358dc56d0bedc5c"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/verilog/ecg_bandpass_filter_regslice_both.v",
+      "bytes": 3330,
+      "sha256": "7aefa63d2986113d42ecd8f67400a7259261217dc7fca5b34c8a381b87304651"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter.vhd",
+      "bytes": 237763,
+      "sha256": "9f9c435172a5b62ec11afdb714624d8f8a3e14c9544c76d408dde6c796d4909f"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_ecg_bandpass_filter_Pipeline_VITIS_LOOP_79_1.vhd",
+      "bytes": 722792,
+      "sha256": "f4b154fa5cf4b3113b84541756801875f2f2624a942c9105698de4833aacb3e4"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_10ns_28s_28_4_1.vhd",
+      "bytes": 3184,
+      "sha256": "56bfc9a2f9ebc66725b1469a40534c9950dec8774610acb9dda556445a226a98"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_5ns_28s_28_4_1.vhd",
+      "bytes": 3176,
+      "sha256": "de80af306693eb08ca04ae31ffe6fb37effc128819a9e4419c715e6439aece24"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_5s_28s_28_4_1.vhd",
+      "bytes": 3167,
+      "sha256": "47fd1e690946aff6872c2e34e57f49372132b740af9b8c872e9f38ac154df603"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_6ns_28s_28_4_1.vhd",
+      "bytes": 3176,
+      "sha256": "da19a12fef67d35050b6af8483213328c089f8c15a1a3bbf6afbafac5b670aac"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_6s_28s_28_4_1.vhd",
+      "bytes": 3167,
+      "sha256": "a9ca5f99614c000bdb0cb097bbcd99da40ca637ea456d81460edc9d0ef62cc97"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_7ns_28s_28_4_1.vhd",
+      "bytes": 3176,
+      "sha256": "081fdc619d046a77c3700a676f56d26d1307f86bb2f39cf60e463dfcc8ae98ee"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_7s_28s_28_4_1.vhd",
+      "bytes": 3167,
+      "sha256": "cb99bb56608481f0ffeab97d0a5662ddaaede613d0228e299c8170927ee5617f"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_8ns_28s_28_4_1.vhd",
+      "bytes": 3176,
+      "sha256": "f593323c8b62a0f4f4ad62cc10ef9a7e6db82cd5333d66327dcea5a24a9efa30"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_8s_28s_28_4_1.vhd",
+      "bytes": 3167,
+      "sha256": "cc44ea046f4f0a7aa01093f2c57e9e2f4a9593febf3599e2b580c216654d75fb"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_9ns_28s_28_4_1.vhd",
+      "bytes": 3176,
+      "sha256": "6daf8345d3a6578c154654e3ee0f9f4ef03fb0e0fc33e9d39a01d82bde9e26f8"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_mac_muladd_16s_9s_28s_28_4_1.vhd",
+      "bytes": 3167,
+      "sha256": "3b6958be49059ef57541635f77dc1318c53069fedc2f3ecfd6d907f9ea3b9d29"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/hdl/vhdl/ecg_bandpass_filter_regslice_both.vhd",
+      "bytes": 4623,
+      "sha256": "c758b96345af40aa00372ad7254d99eec822424dec14f9fbf20139ffb88b7582"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/misc/logo.png",
+      "bytes": 2297,
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af"
+    },
+    {
+      "path": "RTL/HLS_Source/Packaged_IP/xgui/ecg_bandpass_filter_v1_0.tcl",
+      "bytes": 205,
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "path": "RTL/HLS_Source/vitis-comp.json",
+      "bytes": 270,
+      "sha256": "0fa3a18bd059cd07d8a3ac473c2129b792ed0cd5325d5467e76476003b48e8ba"
+    },
+    {
+      "path": "RTL/Vivado_Block_Design/CAPTURE_RTL_SCHEMATIC.tcl",
+      "bytes": 1426,
+      "sha256": "252402e84fa4adb46dcd2886efde2552d07c65860dc9de736f8dd64c50ac5cd6"
+    },
+    {
+      "path": "RTL/Vivado_Block_Design/project_1.xpr",
+      "bytes": 42227,
+      "sha256": "d4a31262a4feb58c1e5087655813fcf29185974526ed7dd53312e05e8f88abe5"
+    },
+    {
+      "path": "RTL/Vivado_Block_Design/system.bd",
+      "bytes": 44012,
+      "sha256": "b23617b72ac7404fc9a8b1f9a332fe829b147dd69666622141d52c662b308cc5"
+    },
+    {
+      "path": "Simulation/HLS_C_Simulation/_csim.log",
+      "bytes": 1566,
+      "sha256": "f87bb736d8543f4ce3d18560ed1a78ffe205d88a3260e7c2d4c78d4ea8fea255"
+    },
+    {
+      "path": "Simulation/HLS_C_Simulation/hls_run_csim.log",
+      "bytes": 6480,
+      "sha256": "558de8029bb8e33069030bbeb8dc830b8c936de1924fd1a399ec921588dfd9b9"
+    },
+    {
+      "path": "Simulation/rtl_output_samples.csv",
+      "bytes": 834712,
+      "sha256": "edf5d2f4cc0e2d926d343d4d03a227d87b3662f9b0b628291352fe1d4d47670b"
+    },
+    {
+      "path": "Simulation/rtl_run.log",
+      "bytes": 876,
+      "sha256": "4980a60bc8ad85d33273ae2f1727af15f9e062b7a028bf5469ab70c527deca87"
+    },
+    {
+      "path": "Simulation/rtl_run_metadata.json",
+      "bytes": 3033,
+      "sha256": "e4a40c1eda62f4516020f690859369b3139b7489feacbc1c36b9d96e5c217daa"
+    },
+    {
+      "path": "Simulation/rtl_waveform.vcd.gz",
+      "bytes": 912864,
+      "sha256": "12775a98c893fdac87e8d372f3497a6fd02d4ffef6c45e6919a32a90d0853c68"
+    },
+    {
+      "path": "Simulation/simulation_report.pdf",
+      "bytes": 114663,
+      "sha256": "1919a90888ff6550b671f17f9071526ae69fed0ade09609143b750ad1ec68ebe"
+    },
+    {
+      "path": "Simulation/SIMULATION_STATUS.md",
+      "bytes": 671,
+      "sha256": "88f3837b3c586d73af2b662de94aaee0ebb3c4209ca23a6bbf663565674159d9"
+    },
+    {
+      "path": "Simulation/Synthesis_and_Implementation_Reports/ecg_bandpass_filter_csynth.rpt",
+      "bytes": 42190,
+      "sha256": "11e0a0a465f58aeccfa4cb4a16fa8ae34b556cf753ac80bfc25bbc5460c8b9d5"
+    },
+    {
+      "path": "Simulation/Synthesis_and_Implementation_Reports/system_wrapper_drc_routed.rpt",
+      "bytes": 43907,
+      "sha256": "9310fe9a2066bba872693e9823a63768cd4703f3cb49f4d7432973cfd1fb51e8"
+    },
+    {
+      "path": "Simulation/Synthesis_and_Implementation_Reports/system_wrapper_timing_summary_routed.rpt",
+      "bytes": 300281,
+      "sha256": "72461bfa69ac7176f4d73223b7788a434f5ed02d7cdbe6b0fa668b8ec5727300"
+    },
+    {
+      "path": "Simulation/Synthesis_and_Implementation_Reports/system_wrapper_utilization_placed.rpt",
+      "bytes": 12263,
+      "sha256": "3aa5595f3bce0643ce8d192ba04c55224d375d4d0cb7c9f3ac7df7873fb90c88"
+    },
+    {
+      "path": "Simulation/transcript.txt",
+      "bytes": 1587,
+      "sha256": "648b16e98690ab9e3009867698921be1dc1da5672df98f8fb731e1e60e5f0e73"
+    },
+    {
+      "path": "Simulation/waveform.png",
+      "bytes": 92599,
+      "sha256": "16a3bdc26281c40de3c8cf0f68848104b76ba7a38a1a7d3f712edf5b6fec81dc"
+    },
+    {
+      "path": "Simulation/waveform_tlast.png",
+      "bytes": 93029,
+      "sha256": "3ce78fa74bdc84ed9d62ae0dedbae3a8d08078c9619eac9dd484e39af518c787"
+    },
+    {
+      "path": "Testbench/ecg_bandpass_filter_tb.cpp",
+      "bytes": 9823,
+      "sha256": "35ec3dc7c4e484a0a3bceb60c5c05a5e0eb34b6f0aed4e39f15920867641042c"
+    },
+    {
+      "path": "Testbench/generate_vectors.py",
+      "bytes": 2570,
+      "sha256": "82a8efd9cbfc35504357073d89260b16e682c258329e72457f718d4cb1431912"
+    },
+    {
+      "path": "Testbench/README.md",
+      "bytes": 623,
+      "sha256": "ced2d30231e1c7c1504a98bc7175cfbc3ef4cb9a5bd24e34cf0a88f2127d13e5"
+    },
+    {
+      "path": "Testbench/run_rtl_sim.py",
+      "bytes": 3133,
+      "sha256": "6879b428de994e4b1739ceedef2942b4035b8e233cdba9d11fe95a53f8df2914"
+    },
+    {
+      "path": "Testbench/tb_top.v",
+      "bytes": 7558,
+      "sha256": "30797e5b8fc6447c6fd6a8ebce0eef4eca8eff41b41d846c56b2107e0608c74e"
+    },
+    {
+      "path": "Testbench/vectors/ecg_expected.hex",
+      "bytes": 86016,
+      "sha256": "7589854f8d95047661d7252365afe0bd76b66f4f5ecd250cbde5646cddbae23f"
+    },
+    {
+      "path": "Testbench/vectors/ecg_input.hex",
+      "bytes": 86016,
+      "sha256": "a120e72ee33a872b4188eb632da71bae5128a87b4d800a192fcb8536ed6c638d"
+    },
+    {
+      "path": "Testbench/vectors/impulse_expected.hex",
+      "bytes": 24576,
+      "sha256": "79af2ea17f337dbd271f358c087c9eee59f4bcb28818974f8503c20178fa2459"
+    },
+    {
+      "path": "Testbench/vectors/impulse_input.hex",
+      "bytes": 24576,
+      "sha256": "0296bf0b7593a0ec5b05c2364e2de89d33d6a0c1ef6022a3125e0084ab9ed7ff"
+    },
+    {
+      "path": "Testbench/vectors/random_expected.hex",
+      "bytes": 36864,
+      "sha256": "510979eb9395e959184ecbc6429b96cadbf0ddee1cf485cf4e0d678dafe5f27e"
+    },
+    {
+      "path": "Testbench/vectors/random_input.hex",
+      "bytes": 36864,
+      "sha256": "ea5dad0e431b88d6b746f699ce4a4af7cd4d15a7a4a01becd993bfe985a348f2"
+    },
+    {
+      "path": "Testbench/vectors/sine_expected.hex",
+      "bytes": 24576,
+      "sha256": "71a7028ac1be0c4c89939cf9d7798656fb09d4bbe254d4941ea9660585496d61"
+    },
+    {
+      "path": "Testbench/vectors/sine_input.hex",
+      "bytes": 24576,
+      "sha256": "384040d210260d68e68fd35d4d0ed3c0d7613e256e03908796afd56ec241b3cd"
+    },
+    {
+      "path": "Video_Link.txt",
+      "bytes": 84,
+      "sha256": "949ad8ae9fc988e65bda7faad8834e257f276fe43821b6ff270b80c4e329a5a3"
+    }
+  ]
+}
