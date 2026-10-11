@@ -33,7 +33,7 @@ An iterative AES-128 datapath encrypts a 128-bit plaintext using a 128-bit key. 
 
 The original hardware demonstration and programming files are preserved. A separate [timing-repair candidate](Experiment-1-Beginner/Timing_Repair/) uses a dedicated previous-key register and passes 104 independently checked reference vectors, cycle-by-cycle equivalence and handshake/reset tests. Its fresh Vivado build meets the 125 MHz constraint with **+1.490 ns setup slack**; completion takes **21 clock cycles** in simulation. The original routed build's **−0.104 ns setup slack** remains documented separately. The final video URL is recorded below. Physical-board verification of the repaired revision remains pending; final video content and public access still require review.
 
-[Final demonstration](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing) | [Project report](Experiment-1-Beginner/Documentation/Project1_AES_Report.pdf) | [Simulation report](Experiment-1-Beginner/Simulation/simulation_report.pdf) | [Repair validation](Experiment-1-Beginner/Documentation/FINAL_VALIDATION.md)
+[Final demonstration](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing) | [Project report](Experiment-1-Beginner/Documentation/Project1_AES_Report.pdf) | [Simulation report](Experiment-1-Beginner/Simulation/simulation_report.pdf)
 
 ### Experiment 2: Design and Implementation of a Reconfigurable FPGA-Based Architecture for Real-Time Radar Signal Processing and Intelligent Target Detection
 
