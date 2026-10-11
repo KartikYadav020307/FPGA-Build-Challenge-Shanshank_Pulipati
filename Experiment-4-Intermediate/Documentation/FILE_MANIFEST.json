@@ -69,11 +69,6 @@
       "sha256": "41d297b1a832330a3b5bb8cb22994feb1ca0214fb3780a8bda8647d87a021f12"
     },
     {
-      "path": "Documentation/SUBMISSION_READINESS.md",
-      "bytes": 4084,
-      "sha256": "977c11902c80542edd6597b6a3ca03207f2fa914f39333f38ee8474f93350f30"
-    },
-    {
       "path": "Documentation/verification_scope.md",
       "bytes": 2437,
       "sha256": "c5460d02af4474b3bf1f438c2c0eea47584e75abc0bf642f996b65e4bcb49d1a"

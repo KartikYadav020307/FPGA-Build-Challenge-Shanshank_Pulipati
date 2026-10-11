@@ -83,8 +83,8 @@ HLS IP can be added as a Vivado IP repository. The HLS configuration targets
 No fresh synthesis or implementation was performed during this update.
 Independent RTL simulation was executed against the original generated core.
 
-Independent RTL verification is now included: 28,672 exact samples across 14 batches, with actual waveform, transcript and simulation report. An original Jupyter screenshot has been recovered. The actual Vivado schematic and physical board photograph are now included. The final demo URL is recorded in `Video_Link.txt`; final-video content and signed-out access still require review. See the explicit
-[submission audit](Documentation/SUBMISSION_READINESS.md).
+Independent RTL verification is now included: 28,672 exact samples across 14 batches, with actual waveform, transcript and simulation report. An original Jupyter screenshot has been recovered. The actual Vivado schematic and physical board photograph are now included. The final demo URL is recorded in `Video_Link.txt`; final-video content and signed-out access still require review. See the project
+documentation.
 
 ## ECG data attribution
 
@@ -94,4 +94,4 @@ Source: https://physionet.org/content/mitdb/1.0.0/.
 
 ## Completion package update - 9 October 2026
 
-Independent Icarus RTL simulation, the original Jupyter capture, actual PYNQ-Z2 photograph and real Vivado hierarchy PDF/PNG are included. The report incorporates these captures and the confirmed Beyond Boolean team details. See Documentation/SUBMISSION_READINESS.md. The final demo link is recorded in Video_Link.txt; the physical-board run was not repeated.
+Independent Icarus RTL simulation, the original Jupyter capture, actual PYNQ-Z2 photograph and real Vivado hierarchy PDF/PNG are included. The report incorporates these captures and the confirmed Beyond Boolean team details. The final demo link is recorded in Video_Link.txt; the physical-board run was not repeated.

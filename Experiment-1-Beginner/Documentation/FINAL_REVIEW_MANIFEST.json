@@ -78,10 +78,6 @@
       "normalization": "none",
       "sha256": "1f0109563f479a6f9f76ddf69b112db5cf35c42312200b2e7feae1addad07c35"
     },
-    "Documentation/SUBMISSION_READINESS.md": {
-      "normalization": "crlf_to_lf",
-      "sha256": "b2a350bb21268c65de68dcdb5b447a1c53a718117182db43ee195b66f8e0b894"
-    },
     "FPGA_Project_Files/Checkpoints/aes_top_routed.dcp": {
       "normalization": "none",
       "sha256": "190862b5983682270e95fb1b123b9c47a931e7f9c0b98a79636d0a9aa005fe4a"

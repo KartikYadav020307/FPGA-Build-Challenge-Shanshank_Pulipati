@@ -10,6 +10,6 @@
 - [Experiment 4 - Neural-network inference](../Experiment-4-Intermediate/Documentation/Project4_NN_Report.pdf)
 - [Experiment 5 - BNN response](../Experiment-5-Advanced/Documentation/Project5_Report.pdf)
 
-[SUBMISSION_STATUS.md](SUBMISSION_STATUS.md) records current evidence and remaining checks. All five final video URLs are recorded; final video content/public access and repaired-AES board verification remain unverified. The opening overview supersedes historical repository-wide pending notes inside preserved reports. Original project evidence, dates, warnings and provenance remain intact.
+All five final video URLs are recorded; final video content/public access and repaired-AES board verification remain unverified. The opening overview supersedes historical repository-wide pending notes inside preserved reports. Original project evidence, dates, warnings and provenance remain intact.
 
 Run `python build_combined_report.py` with ReportLab and pypdf installed to rebuild this report from the current individual PDFs. Report generation performs no FPGA tests.

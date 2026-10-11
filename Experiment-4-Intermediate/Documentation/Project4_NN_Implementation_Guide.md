@@ -568,7 +568,7 @@ ties, ReLU saturation, and the demo controller's latency counters.
 Recorded implementation: Vivado 2025.1.1, 50 MHz, setup slack +5.813 ns
 and hold slack +0.048 ns. The physical CSV contains 45/45 exact integer
 reference matches and 43/45 correct classifications; core latency is 4/36 cycles.
-See Results/, Evidence/ and Documentation/SUBMISSION_READINESS.md for scope.
+See Results/ and Evidence/ for scope.
 The final demo is linked; public access and presentation content need review.
 
 ## Primary references

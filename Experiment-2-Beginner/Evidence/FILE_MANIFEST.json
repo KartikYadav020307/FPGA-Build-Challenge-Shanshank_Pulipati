@@ -7,11 +7,6 @@
       "sha256": "090de0bcaa2de7e93fff0ae772ab91c85a306f80cc71a044032033f8920a3097"
     },
     {
-      "path": "Documentation/SUBMISSION_READINESS.md",
-      "bytes": 5109,
-      "sha256": "9a3fe347ad70a183b7f4820a6ba5bd2d4a1403cefd17d38a4ac44a6a0c2fd9d5"
-    },
-    {
       "path": "Documentation/Video_Script.md",
       "bytes": 2632,
       "sha256": "882f8d85774419da5e6dbd14de19d0294effe1124ab8b22003bd2358dd1a2fcd"

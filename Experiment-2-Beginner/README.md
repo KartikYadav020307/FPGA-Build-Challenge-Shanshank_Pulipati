@@ -12,7 +12,7 @@ The FPGA generates 100 synthetic unsigned magnitude samples, applies a streaming
 
 - [Project report: all seven organizer sections](Documentation/Project2_Radar_Report.pdf)
 - [Simulation report](Simulation/simulation_report.pdf)
-- [Organizer checklist and remaining inputs](Documentation/SUBMISSION_READINESS.md)
+
 - [Original physical PASS result](Results/HARDWARE_PASS.txt) and [39-row board CSV](Results/hardware_results.csv)
 - [Successful Vivado log](Evidence/vivado_build.log) and [source/timing manifest](Results/BUILD_SUCCESS.txt)
 

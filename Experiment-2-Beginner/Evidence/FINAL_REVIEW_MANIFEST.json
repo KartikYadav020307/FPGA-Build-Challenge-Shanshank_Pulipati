@@ -18,10 +18,6 @@
       "normalization": "none",
       "sha256": "0b3a4951b26e9db2ecaaf91a046693478c75150506fd6ea813265de876363612"
     },
-    "Documentation/SUBMISSION_READINESS.md": {
-      "normalization": "crlf_to_lf",
-      "sha256": "e3742b77dfbfc802a0ac85bd84e522e61277af218c4ff10a6982ace58872f5c1"
-    },
     "Documentation/Video_Script.md": {
       "normalization": "crlf_to_lf",
       "sha256": "600a3d72007ca6c69e954a44b30d966122d55149080a2ce79b0e86958ab87fed"

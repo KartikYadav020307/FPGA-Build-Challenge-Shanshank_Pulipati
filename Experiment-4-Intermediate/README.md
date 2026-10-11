@@ -6,7 +6,7 @@ A trained **4 -> 4 ReLU -> 3 Iris classifier** on PYNQ-Z2 compares a parallel pi
 
 - [Project report: seven organizer sections](Documentation/Project4_NN_Report.pdf)
 - [Simulation report](Simulation/simulation_report.pdf)
-- [Organizer checklist and remaining work](Documentation/SUBMISSION_READINESS.md)
+
 - [Original routed programming files and reports](Results/)
 - [Original physical-board CSV](Evidence/hardware_test_results.csv)
 - [Source schematic](Images/rtl_schematic.png) and [actual waveform](Simulation/waveform.png)

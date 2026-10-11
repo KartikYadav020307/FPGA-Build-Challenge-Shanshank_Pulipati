@@ -33,7 +33,7 @@ An iterative AES-128 datapath encrypts a 128-bit plaintext using a 128-bit key. 
 
 The original hardware demonstration and programming files are preserved. A separate [timing-repair candidate](Experiment-1-Beginner/Timing_Repair/) uses a dedicated previous-key register and passes 104 independently checked reference vectors, cycle-by-cycle equivalence and handshake/reset tests. Its fresh Vivado build meets the 125 MHz constraint with **+1.490 ns setup slack**; completion takes **21 clock cycles** in simulation. The original routed build's **−0.104 ns setup slack** remains documented separately. The final video URL is recorded below. Physical-board verification of the repaired revision remains pending; final video content and public access still require review.
 
-[Final demonstration](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing) | [Project report](Experiment-1-Beginner/Documentation/Project1_AES_Report.pdf) | [Simulation report](Experiment-1-Beginner/Simulation/simulation_report.pdf) | [Repair validation](Experiment-1-Beginner/Documentation/FINAL_VALIDATION.md) | [Submission checklist](Experiment-1-Beginner/Documentation/SUBMISSION_READINESS.md)
+[Final demonstration](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing) | [Project report](Experiment-1-Beginner/Documentation/Project1_AES_Report.pdf) | [Simulation report](Experiment-1-Beginner/Simulation/simulation_report.pdf) | [Repair validation](Experiment-1-Beginner/Documentation/FINAL_VALIDATION.md)
 
 ### Experiment 2: Design and Implementation of a Reconfigurable FPGA-Based Architecture for Real-Time Radar Signal Processing and Intelligent Target Detection
 
@@ -45,7 +45,7 @@ A streaming cell-averaging constant false-alarm-rate (CA-CFAR) detector processe
 
 A 100-sample frame produces **80 valid detection windows**. The saved board CSV contains **39 passing rows covering all 32 tested parameter combinations**. Independent XSim checks pass 10,721 core results and 33 controller frames. Routed setup slack is **+12.176 ns**. Native Vivado source/IP, matching BIT/LTX, checkpoint and routed reports are included. The final video URL is recorded; content and public access still require review.
 
-[Project report](Experiment-2-Beginner/Documentation/Project2_Radar_Report.pdf) | [Simulation report](Experiment-2-Beginner/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1GVxgJAPUFZR8cL2akO7Jz29AENO5zwNO/view?usp=sharing) | [Submission checklist](Experiment-2-Beginner/Documentation/SUBMISSION_READINESS.md)
+[Project report](Experiment-2-Beginner/Documentation/Project2_Radar_Report.pdf) | [Simulation report](Experiment-2-Beginner/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1GVxgJAPUFZR8cL2akO7Jz29AENO5zwNO/view?usp=sharing)
 
 ### Experiment 3: A Hardware-Accelerated FPGA Framework for Real-Time Bio-Signal Acquisition and Intelligent Pattern Analysis
 
@@ -57,7 +57,7 @@ A Vitis HLS-generated **128-tap, signed Q4.12 FIR filter** runs in programmable 
 
 Saved board results contain **2,048 exact sine-test samples and 12,288 exact ECG samples**, with zero fixed-point reference error. The recorded sine test shows **53.74 dB reduction at 50 Hz**, and the ECG example yields 42 candidate peaks and approximately 73.9 bpm. Independent generated-core RTL simulation passes **28,672 samples across 14 batches**, including stream stalls and frame checks. The saved **7.55 ms** measurement is Python-plus-DMA wall time. Matching BIT/HWH/XSA, executed notebooks, generated RTL/IP, block design and actual Vivado schematic are included; original complete workspace archives are linked in the source-provenance note.
 
-[Project report](Experiment-3-Intermediate/Documentation/Project3_ECG_Report.pdf) | [Simulation report](Experiment-3-Intermediate/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1kbGfaqtLmN6DjE9lcy6zrnL1sUyOW8ED/view?usp=sharing) | [Submission checklist](Experiment-3-Intermediate/Documentation/SUBMISSION_READINESS.md)
+[Project report](Experiment-3-Intermediate/Documentation/Project3_ECG_Report.pdf) | [Simulation report](Experiment-3-Intermediate/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1kbGfaqtLmN6DjE9lcy6zrnL1sUyOW8ED/view?usp=sharing)
 
 ### Experiment 4: Design of an FPGA-Based Hardware Accelerator for Low-Latency Neural Network Inference
 
@@ -69,7 +69,7 @@ A trained **4-input → 4-ReLU-hidden → 3-output** fixed-point network classif
 
 Measured core latencies are **4 cycles / 80 ns** for the parallel implementation and **36 cycles / 720 ns** for the sequential implementation: a **9× core-latency reduction**, excluding host/JTAG transfer time. All **45 saved held-out hardware cases** match the integer reference, while classification accuracy is **43/45 (95.56%)**. The saved regression passes 4,502 vectors per core. Routed setup slack is **+5.813 ns**. Original BIT/LTX, reports, physical CSV, native source/IP archive and clean-build scripts are supplied. Original native paths may require relocation; the Tcl generation flow provides a portable rebuild.
 
-[Project report](Experiment-4-Intermediate/Documentation/Project4_NN_Report.pdf) | [Simulation report](Experiment-4-Intermediate/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1iKShZ_66BI91TXDw6vPuZwFjw929anQ-/view?usp=sharing) | [Submission checklist](Experiment-4-Intermediate/Documentation/SUBMISSION_READINESS.md)
+[Project report](Experiment-4-Intermediate/Documentation/Project4_NN_Report.pdf) | [Simulation report](Experiment-4-Intermediate/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/1iKShZ_66BI91TXDw6vPuZwFjw929anQ-/view?usp=sharing)
 
 ### Experiment 5: A Reconfigurable FPGA-Based Binarized Neural Network Architecture for Ultra-Low-Latency Autonomous Safety Response
 
@@ -81,7 +81,7 @@ A **16–16–4 binarized neural network** uses XNOR/popcount arithmetic. Two CR
 
 Parallel and folded cores complete in **5/21 cycles (100/420 ns at 50 MHz)**. Saved exhaustive tests cover 65,536 binary inputs per profile per core, and all **64 saved physical core cases** match the reference. Whole-design resources are **5,772 LUTs, 6,501 FFs, zero BRAM and zero DSP**; routed setup slack is **+4.534 ns**. The folded core uses fewer FFs but more LUTs in this implementation. Original BIT.gz/LTX and reports are preserved; Tcl scripts recreate the native project. The replacement final video needs review, including watchdog recovery; the earlier edit ended with STOP latched.
 
-[Project report](Experiment-5-Advanced/Documentation/Project5_Report.pdf) | [Simulation report](Experiment-5-Advanced/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/11JItdx7IdNwuDhve5nBIV5tBiZsHoPV7/view?usp=sharing) | [Submission checklist](Experiment-5-Advanced/Documentation/SUBMISSION_CHECKLIST.md)
+[Project report](Experiment-5-Advanced/Documentation/Project5_Report.pdf) | [Simulation report](Experiment-5-Advanced/Simulation/simulation_report.pdf) | [Final demonstration](https://drive.google.com/file/d/11JItdx7IdNwuDhve5nBIV5tBiZsHoPV7/view?usp=sharing)
 
 ## Technologies Used
 
@@ -97,7 +97,7 @@ Parallel and folded cores complete in **5/21 cycles (100/420 ns at 50 MHz)**. Sa
 
 The [official organizer requirements](Submission_Guidelines/documents_req.pdf) specify team/registration information, the selected FPGA board and summaries of all five experiments on the repository home page. Each project report contains the seven required sections: objective, block diagram, RTL design, simulation results, hardware implementation, applications and conclusion.
 
-The [combined team report](Final_Report/Beyond_Boolean_Final_Report.pdf) is present. Its opening overview and Project 1–2 sections have been refreshed to reflect the AES timing repair and recorded final video links. It incorporates the current individual reports in experiment order. [Final_Report/SUBMISSION_STATUS.md](Final_Report/SUBMISSION_STATUS.md) records remaining verification tasks.
+The [combined team report](Final_Report/Beyond_Boolean_Final_Report.pdf) is present. Its opening overview and Project 1–2 sections have been refreshed to reflect the AES timing repair and recorded final video links. It incorporates the current individual reports in experiment order.
 
 | Item | Status at 10 October 2026 |
 | --- | --- |

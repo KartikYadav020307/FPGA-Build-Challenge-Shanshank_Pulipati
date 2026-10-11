@@ -8,7 +8,7 @@ PYNQ-Z2, xc7z020clg400-1, Vivado 2025.1.1. A 16-16-4 binary neural network suppl
 
 - [Project report](Documentation/Project5_Report.pdf)
 - [Simulation report](Simulation/simulation_report.pdf)
-- [Evidence and requirement checklist](Documentation/SUBMISSION_CHECKLIST.md)
+
 - [Final demo](https://drive.google.com/file/d/11JItdx7IdNwuDhve5nBIV5tBiZsHoPV7/view?usp=sharing)
 - [Recorded implementation reports and bitstream](Results/run_20261008_121952_125/)
 
@@ -28,4 +28,4 @@ The recorded physical core check shows 64/64 PASS; the supplied Tcl log ends HAR
 
 ## Package structure
 
-Organizer-required Documentation, RTL, Testbench, Simulation, Images and Video_Link.txt are present. Models/Data/Python/Vivado support reproduction; Results contains original routed artifacts; Evidence preserves available hardware evidence. SHA256SUMS.txt inventories the package. Team details are recorded above, and the combined five-project report is available in [Final_Report](../Final_Report/Beyond_Boolean_Final_Report.pdf). See the [whole-entry submission status](../Final_Report/SUBMISSION_STATUS.md) for remaining verification tasks.
+Organizer-required Documentation, RTL, Testbench, Simulation, Images and Video_Link.txt are present. Models/Data/Python/Vivado support reproduction; Results contains original routed artifacts; Evidence preserves available hardware evidence. SHA256SUMS.txt inventories the package. Team details are recorded above, and the combined five-project report is available in [Final_Report](../Final_Report/Beyond_Boolean_Final_Report.pdf).

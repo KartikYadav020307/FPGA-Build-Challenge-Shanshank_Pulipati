@@ -8,4 +8,4 @@ Use the original matched `Hardware/radar_top.bit` and `radar_top.ltx` in Hardwar
 
 For reproduction, use a path without spaces and run `RUN_PROJECT2.cmd`, followed by `OPEN_PROJECT2.cmd` after BUILD SUCCESS. This build replaces outputs; preserve the archive first. To open the original project, extract `FPGA_Project/Project2_Radar_Vivado_Source.zip` and open `Project2_Radar_Final/Build/run_20261008_222502/project2_radar.xpr`, retaining the full relative layout.
 
-[Submission checklist](Documentation/SUBMISSION_READINESS.md) | [Validation](Documentation/FINAL_VALIDATION.md) | [Warning review](Reports/README.md)
+[Validation](Documentation/FINAL_VALIDATION.md) | [Warning review](Reports/README.md)
