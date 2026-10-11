@@ -2,7 +2,7 @@
 
 **Official project title:** Design and Implementation of a Reconfigurable FPGA-Based Architecture for Real-Time Radar Signal Processing and Intelligent Target Detection.
 
-**Team:** Beyond Boolean. Shanshank Pulipati (25BEC0573); Kartik Yadav (25BEC0087).
+**Team:** Beyond Boolean. Shashank Pulipati (25BEC0573); Kartik Yadav (25BEC0087).
 
 **Board:** PYNQ-Z2, `xc7z020clg400-1`. **Clock:** 50 MHz. **Vivado:** 2025.1.1.
 
