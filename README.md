@@ -110,5 +110,3 @@ The [combined team report](Final_Report/Beyond_Boolean_Final_Report.pdf) is pres
 | Project 4 JSON inventory/status summary | Refreshed; original snapshots retained under Evidence/Historical/; current checksums validated |
 
 Raw timing, DRC and methodology reports retain their warnings and qualifications. Source-derived schematic illustrations are identified as such in project documentation. Core timing and saved numerical agreement do not establish complete system performance or application validation. AI-assisted documentation and tooling provenance is recorded in the project evidence notes.
-
-The repository remains `buildx-demo`. Confirm the organizer's naming requirement: the supplied PDF uses both leader-name and team-name examples. Its printed deadline is **23 September 2026**; an active deadline or extension must be confirmed separately.

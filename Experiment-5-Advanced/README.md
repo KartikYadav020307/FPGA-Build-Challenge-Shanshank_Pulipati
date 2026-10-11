@@ -2,7 +2,7 @@
 
 ## Reconfigurable FPGA BNN for autonomous safety response
 
-Team: **Beyond Boolean** — Shanshank Pulipati (25BEC0573), Kartik Yadav (25BEC0087).
+Team: **Beyond Boolean** — Shashank Pulipati (25BEC0573), Kartik Yadav (25BEC0087).
 
 PYNQ-Z2, xc7z020clg400-1, Vivado 2025.1.1. A 16-16-4 binary neural network supplies four proposals; an independent safety controller enforces emergency and timeout STOP. Two checked model banks allow live normal/cautious policy switching without rebuilding the bitstream.
 

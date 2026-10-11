@@ -3,7 +3,7 @@
 V-SPACE FPGA Build Challenge 2026 | Intermediate | PYNQ-Z2 / XC7Z020
 
 **Team:** Beyond Boolean
-**Members:** Shanshank Pulipati (25BEC0573); Kartik Yadav (25BEC0087).
+**Members:** Shashank Pulipati (25BEC0573); Kartik Yadav (25BEC0087).
 **Tools:** Vitis HLS and Vivado 2025.1.1; Python/Jupyter on PYNQ.
 
 ## What was implemented

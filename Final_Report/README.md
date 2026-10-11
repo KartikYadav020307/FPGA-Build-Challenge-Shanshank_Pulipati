@@ -2,7 +2,7 @@
 
 [Beyond_Boolean_Final_Report.pdf](Beyond_Boolean_Final_Report.pdf) contains a refreshed two-page team/status overview followed by the current five individual project reports, in experiment order. The Project 1 report records the supplied final video URL and separates original-board evidence from the timing-repair candidate; the current Project 2 report records its final URL.
 
-**Team:** Beyond Boolean. Shanshank Pulipati (25BEC0573); Kartik Yadav (25BEC0087). **Board:** PYNQ-Z2.
+**Team:** Beyond Boolean. Shashank Pulipati (25BEC0573); Kartik Yadav (25BEC0087). **Board:** PYNQ-Z2.
 
 - [Experiment 1 - AES-128](../Experiment-1-Beginner/Documentation/Project1_AES_Report.pdf)
 - [Experiment 2 - Radar CA-CFAR](../Experiment-2-Beginner/Documentation/Project2_Radar_Report.pdf)
