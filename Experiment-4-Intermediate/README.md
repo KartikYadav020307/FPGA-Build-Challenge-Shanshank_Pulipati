@@ -57,4 +57,4 @@ Both the full regression and three-case waveform test passed again in local Viva
 
 Optional HDL reproduction: install Icarus Verilog 12.0 and run `python python/run_open_source_tests.py`. Rebuild the PDF/waveform plot with `python Documentation/build_report.py` (reportlab, matplotlib and Pillow). Training dependencies are in `python/requirements.txt`; attribution is in `Data/ATTRIBUTION.md`.
 
-The organizer folders Documentation/RTL/Testbench/Simulation/Images and Video_Link.txt are present. Additional Data/python/Vivado/Results/Evidence preserve reproducibility. Real SystemVerilog `.sv` filenames are retained rather than renamed to the checklist's illustrative `.v` names. SHA256SUMS.txt and Documentation/FILE_MANIFEST.json inventory the package.
+The organizer folders Documentation/RTL/Testbench/Simulation/Images and Video_Link.txt are present. Additional Data/python/Vivado/Results/Evidence preserve reproducibility. Real SystemVerilog `.sv` filenames are retained rather than renamed to the checklist's illustrative `.v` names. Documentation/FILE_MANIFEST.json inventories the package.

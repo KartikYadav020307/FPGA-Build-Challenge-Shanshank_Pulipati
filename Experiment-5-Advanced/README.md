@@ -28,4 +28,4 @@ The recorded physical core check shows 64/64 PASS; the supplied Tcl log ends HAR
 
 ## Package structure
 
-Organizer-required Documentation, RTL, Testbench, Simulation, Images and Video_Link.txt are present. Models/Data/Python/Vivado support reproduction; Results contains original routed artifacts; Evidence preserves available hardware evidence. SHA256SUMS.txt inventories the package. Team details are recorded above, and the combined five-project report is available in [Final_Report](../Final_Report/Beyond_Boolean_Final_Report.pdf).
+Organizer-required Documentation, RTL, Testbench, Simulation, Images and Video_Link.txt are present. Models/Data/Python/Vivado support reproduction; Results contains original routed artifacts; Evidence preserves available hardware evidence. Team details are recorded above, and the combined five-project report is available in [Final_Report](../Final_Report/Beyond_Boolean_Final_Report.pdf).

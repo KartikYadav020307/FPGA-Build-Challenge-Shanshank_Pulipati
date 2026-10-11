@@ -1,5 +1,5 @@
 {
-  "description": "Current submission inventory; exact bytes; excludes itself and SHA256SUMS.txt. Historical inventory retained under Evidence/Historical/.",
+  "description": "Current submission inventory; exact bytes; excludes itself. Historical inventory retained under Evidence/Historical/.",
   "updated_date_IST": "2026-10-10",
   "baseline_commit": "f22f90757221d62611059a21b7858885c4731484",
   "files": [

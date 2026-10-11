@@ -3,7 +3,7 @@
   "version": "1.1-submission",
   "target_part": "xc7z020clg400-1",
   "vivado": "2025.1/2025.1.1",
-  "scope": "Reproducible build/model/test/host inputs; refreshed for portable recorded build pointer. Generated evidence and reports are inventoried separately in SHA256SUMS.txt.",
+  "scope": "Reproducible build/model/test/host inputs; refreshed for portable recorded build pointer. Supplementary results and evidence are provided in their project directories.",
   "files": [
     {
       "path": "Data/cautious_golden.mem",
