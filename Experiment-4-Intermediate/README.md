@@ -11,7 +11,7 @@ A trained **4 -> 4 ReLU -> 3 Iris classifier** on PYNQ-Z2 compares a parallel pi
 - [Original physical-board CSV](Evidence/hardware_test_results.csv)
 - [Source schematic](Images/rtl_schematic.png) and [actual waveform](Simulation/waveform.png)
 
-**Team:** Beyond Boolean — Shanshank Pulipati (25BEC0573), Kartik Yadav (25BEC0087).
+**Team:** Beyond Boolean — Shashank Pulipati (25BEC0573), Kartik Yadav (25BEC0087).
 
 **Final demo:** [Drive video](https://drive.google.com/file/d/1iKShZ_66BI91TXDw6vPuZwFjw929anQ-/view?usp=sharing). See [video review](Documentation/VIDEO_REVIEW.md) for content/access review status. The raw recording remains in Evidence/RAW_VIDEO.md.
 
