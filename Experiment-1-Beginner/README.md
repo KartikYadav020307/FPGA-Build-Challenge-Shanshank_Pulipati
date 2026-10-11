@@ -1,40 +1,119 @@
-# Experiment 1 - AES-128 hardware encryption accelerator
+# Experiment 1 — AES-128 Hardware Encryption Accelerator
 
-**Team:** Beyond Boolean. Shanshank Pulipati (25BEC0573); Kartik Yadav (25BEC0087).
+## Team
 
-**Board:** PYNQ-Z2, `xc7z020clg400-1`. **Tool:** Vivado 2025.1.1. **Clock constraint:** 125 MHz / 8 ns.
+**Beyond Boolean**
 
-An iterative AES-128 core accepts a key/plaintext through Vivado VIO/JTAG and retains the encrypted block for readout. `aes_top` instantiates `aes_core` and `vio_0`; the only external RTL input is the board clock. It encrypts one block, without a streaming bus, encryption mode or authentication layer.
+| Member | Registration Number |
+|---|---|
+| Shashank Pulipati | 25BEC0573 |
+| Kartik Yadav | 25BEC0087 |
 
-[Project report](Documentation/Project1_AES_Report.pdf) | [Original simulation report](Simulation/simulation_report.pdf) | [Repair validation](Documentation/FINAL_VALIDATION.md) | [Submission checklist](Documentation/SUBMISSION_READINESS.md)
+## Overview
 
-## Two preserved revisions
+This project implements an iterative AES-128 encryption accelerator on the PYNQ-Z2 development board. The core accepts a 128-bit key and plaintext through Vivado VIO over JTAG, performs AES encryption, and retains the 128-bit ciphertext for readout.
 
-| Revision | Files and verified evidence | Limitations |
-| --- | --- | --- |
-| Original board demonstration | `RTL/`, `Testbench/`, original `Simulation/`, `Documentation/Implementation_Reports/`, original native ZIP, `FPGA_Project_Files/Programming/` BIT/LTX and checkpoint | One archived 100 MHz simulation vector; 125 MHz setup WNS -0.104 ns, TNS -0.276 ns, four failing endpoints |
-| Timing repair candidate | `Timing_Repair/RTL/`, paired equivalence testbench and vectors, supplied outputs, independent checkpoint recheck and fresh reproduction records; repaired native ZIP | Functional simulation and static timing verified; physical-board execution of repaired BIT/LTX remains pending |
+The design processes one block per operation. It provides the AES encryption primitive without a streaming interface, block-cipher mode, or authentication layer.
 
-The repair uses a dedicated 128-bit `previous_key` register instead of selecting the previous key through `round_keys[k_idx-1]`. The port interface, AES transforms, VIO wiring and 8 ns constraint are unchanged. Regression checks 104 independently recomputed AES reference vectors, cycle-by-cycle equivalence, 21 cycles from accepted start to completion, reset/restart, busy input capture, retained ciphertext and held-start retriggering. `done` lasts one clock; retained ciphertext can be visible with `done=0`.
+## Platform
 
-The supplied repaired checkpoint reproduces WNS **1.490 ns**, WHS **0.033 ns**, WPWS **2.750 ns**, zero failing endpoints and zero unconstrained internal endpoints. All four bus-skew constraints are MET; minimum slack **6.642 ns**. Integrated utilization is **2860 LUTs / 4043 FF / 0 BRAM / 0 DSP**, including VIO/debug hub. Five DRC Warning checks and four methodology Warning checks remain disclosed. See the validation record for the separately measured fresh-build results; do not mix files from different builds.
+| Parameter | Specification |
+|---|---|
+| Development board | PYNQ-Z2 |
+| FPGA device | `xc7z020clg400-1` |
+| Design tool | Vivado 2025.1.1 |
+| Implementation clock constraint | 125 MHz / 8 ns |
+| Key and block width | 128 bits |
+| Control and readout | Vivado VIO / JTAG |
+| Core latency | 21 clock cycles from accepted start to completion |
 
-## Physical and diagram evidence
+## Architecture
 
-`Images/recorded_hardware_output.png` is the unchanged supplied recording frame: key `2B7E151628AED2A6ABF7158809CF4F3C`, plaintext `6BC1BEE22E409F96E93D7E117393172A`, ciphertext `3AD77BB40D7A3660A89ECAF32466EF97`. It documents the original demonstration, not the repaired build. The original low-resolution `hardware_output.jpg`, board photograph and programmed-VIO screenshot are also preserved. `recorded_board.png` is the supplied powered-board frame.
+The top module, `aes_top`, integrates the encryption core, `aes_core`, and the virtual input/output module, `vio_0`. The board clock is the only external RTL input; the key, plaintext, and control signals are supplied through VIO.
 
-`Images/block_diagram.png` is a conceptual architecture drawing. `Images/rtl_schematic.png` is a source-derived top connectivity diagram, not a native Vivado schematic capture. Both agree with the unchanged top interface; neither represents detailed repaired key-expansion circuitry. Original waveforms/WDB remain under `Simulation/`; the new repair VCD and its scientific plot are under `Timing_Repair/Validation/`.
+The core performs the AES transformations and key expansion iteratively. The timing-optimized implementation uses a dedicated 128-bit `previous_key` register during key expansion. Ciphertext remains available after completion, while `done` pulses for one clock cycle.
 
-## Reproduce or program
+![AES accelerator architecture](Images/block_diagram.png)
 
-For the original project, extract `FPGA_Project_Files/Native_Project/Project1_AES_Vivado_Source.zip` and open `aes128_core/aes128_core.xpr`, keeping the full layout. Its original programming pair remains at `FPGA_Project_Files/Programming/aes_top.bit` and `aes_top.ltx`.
+The architecture image is a conceptual block diagram. The [RTL connectivity diagram](Images/rtl_schematic.png) shows source-derived top-level connections.
 
-For the repaired native source project, extract `FPGA_Project_Files/Native_Project/Project1_AES_Repaired_Vivado_Source.zip` and open `AESRepair/build_repaired/aes125_repaired.xpr`. Use Vivado 2025.1.1; generated run/cache folders are excluded, so rebuilding creates new results. Selected original source/IP files are byte-identical to the supplied ZIP.
+## Verification and Results
 
-For clean repair reproduction, copy the entire `Timing_Repair/` folder to a short writable path. In a separate Vivado batch process run `vivado -mode batch -source BUILD_REPAIRED.tcl`. This creates `build_repaired/`, refuses to overwrite an existing build, checks regression, synthesizes, routes, optimizes after route, and gates BIT/LTX export on timing/coverage and bus skew. The supplied historical script and its notes are retained in `Supplied/`; use the corrected root runner. See [repair instructions](Timing_Repair/README.md).
+Functional regression checks 104 independently recomputed AES reference vectors and cycle-by-cycle equivalence between the baseline and timing-optimized cores. Additional checks cover completion latency, reset and restart, input capture while busy, retained ciphertext, and retriggering with a held start signal.
 
-## Remaining submission work
+The supplied timing-optimized routed checkpoint has the following static implementation results:
 
-The required technical file categories are present. The [final demonstration video](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing) is recorded in `Video_Link.txt`. **Project 1 verification remains incomplete:** final video content and anonymous reviewer access have not been verified. A compliant final video must cover introduction/problem, architecture/RTL, physical setup/working demonstration and conclusion. Repaired-board testing remains pending; original footage cannot validate the repaired bitstream. Review normal PYNQ boot/PS initialization and disclosed debug-IP warnings for deployment.
+| Metric | Result |
+|---|---|
+| Worst setup slack (WNS) | 1.490 ns |
+| Worst hold slack (WHS) | 0.033 ns |
+| Worst pulse-width slack (WPWS) | 2.750 ns |
+| Failing timing endpoints | 0 |
+| Unconstrained internal endpoints | 0 |
+| Bus-skew constraints | All four met |
+| Minimum bus-skew slack | 6.642 ns |
+| LUTs | 2,860 |
+| Flip-flops | 4,043 |
+| BRAM / DSP | 0 / 0 |
 
-The original technical/evidence files and earlier report PDF were preserved. The earlier Projects 1-2 technical review preserved root files and Projects 3-5. The subsequent submission synchronization updates root documentation and Project 4 inventory metadata; original technical evidence remains preserved. The source manifest in `Timing_Repair/Supplied/` applies to the original repair-package files; the current manifest and validation record distinguish later review artifacts. AI assistance was used in preparing documentation and validation tooling; no numerical claim about HDL authorship is made.
+Resource figures include VIO and the debug hub. Detailed reports, disclosed DRC and methodology warnings, and separate reproduction results are available in the [validation record](Documentation/FINAL_VALIDATION.md).
+
+### Recorded Hardware Demonstration
+
+The recorded board demonstration verifies the baseline implementation with the following AES-128 test vector:
+
+| Field | Hexadecimal value |
+|---|---|
+| Key | `2B7E151628AED2A6ABF7158809CF4F3C` |
+| Plaintext | `6BC1BEE22E409F96E93D7E117393172A` |
+| Ciphertext | `3AD77BB40D7A3660A89ECAF32466EF97` |
+
+The hardware output frame, board photograph, and VIO screenshot are preserved under `Images/`. The timing-optimized implementation is supported by functional regression and static implementation reports.
+
+[Watch the demonstration](https://drive.google.com/file/d/1HdQFdZ9_jw4ydN3tetVhZn5XoXck3o-m/view?usp=sharing)
+
+## Repository Contents
+
+| Location | Contents |
+|---|---|
+| `RTL/` | Baseline Verilog source |
+| `Testbench/` | Baseline simulation testbench |
+| `Simulation/` | Original simulation report and waveform files |
+| `Timing_Repair/` | Timing-optimized RTL, regression tests, build scripts, and validation outputs |
+| `Documentation/` | Project report and implementation/validation records |
+| `FPGA_Project_Files/` | Native Vivado archives and programming artifacts |
+| `Images/` | Architecture, connectivity, and physical demonstration images |
+| `Video_Link.txt` | Demonstration video URL |
+
+## Build and Run
+
+### Native Vivado Projects
+
+- **Baseline:** extract `FPGA_Project_Files/Native_Project/Project1_AES_Vivado_Source.zip` and open `aes128_core/aes128_core.xpr`.
+- **Timing-optimized:** extract `FPGA_Project_Files/Native_Project/Project1_AES_Repaired_Vivado_Source.zip` and open `AESRepair/build_repaired/aes125_repaired.xpr`.
+
+Keep each archive's directory structure intact. Use Vivado 2025.1.1; generated run and cache directories are recreated during rebuilding.
+
+### Clean Timing-Optimized Build
+
+Copy the complete `Timing_Repair/` directory to a short writable path. From that directory, run:
+
+```bash
+vivado -mode batch -source BUILD_REPAIRED.tcl
+```
+
+The runner creates `build_repaired/`, runs regression checks, synthesizes and implements the design, and checks timing and bus skew before exporting BIT/LTX files. It refuses to overwrite an existing build directory.
+
+See [build instructions](Timing_Repair/README.md) for details.
+
+### Baseline Hardware Demonstration
+
+Use the matched `aes_top.bit` and `aes_top.ltx` files under `FPGA_Project_Files/Programming/`. In Vivado Hardware Manager, connect to the PYNQ-Z2, program the FPGA, and use VIO to apply the key, plaintext, and control signals and read the ciphertext.
+
+## Documentation
+
+- [Project report](Documentation/Project1_AES_Report.pdf)
+- [Original simulation report](Simulation/simulation_report.pdf)
+- [Timing and functional validation](Documentation/FINAL_VALIDATION.md)
+- [Build instructions](Timing_Repair/README.md)
+
